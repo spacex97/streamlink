@@ -252,6 +252,7 @@ class Streamlink:
             "ffmpeg-verbose": False,
             "ffmpeg-verbose-path": None,
             "ffmpeg-fout": None,
+            "ffmpeg-dkey": None,
             "ffmpeg-video-transcode": None,
             "ffmpeg-audio-transcode": None,
             "ffmpeg-copyts": False,
@@ -498,6 +499,10 @@ class Streamlink:
               - ``str | None``
               - ``None``
               - The codec to use if transcoding video when muxing streams, e.g. ``"aac"``
+            * - ffmpeg-dkey
+              - ``str | None``
+              - ``None``
+              - Specify decryption key
             * - ffmpeg-copyts
               - ``bool``
               - ``False``
